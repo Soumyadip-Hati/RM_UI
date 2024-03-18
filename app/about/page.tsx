@@ -1,11 +1,11 @@
 import Image from "next/image";
 //import {} from ''
 
-export default function AppRoot() {
+export default function About() {
   return (
     <main>
       
-      <div>Hello World!</div>
+      <div>Hello World from about page!</div>
       
     </main>
   );
