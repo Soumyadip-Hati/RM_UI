@@ -29,7 +29,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <div className="flex flex-col font-bold text-2xl text-slate-200 items-start justify-center px-3 h-full"><span className="align-middle">Release Manager</span></div>
             <div className="flex flex-col w-full h-full items-start justify-end">
               <ul className="flex gap-3 font-semibold text-slate-50 h-full pt-3">
-                <li className="flex border-solid border-2 border-slate-100 px-3"><Link className="m-auto" href="/home">Home</Link></li>
+                <li className="flex border-solid border-2 border-slate-100 rounded-r-lg px-3"><Link className="m-auto" href="/home">Home</Link></li>
                 <li className="flex"><Link className="m-auto" href="/apps">Apps</Link></li>
               </ul>
             </div>
