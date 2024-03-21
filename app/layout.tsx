@@ -16,9 +16,6 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
-  // function menuClick(ined:number) {
-  //   menus[]
-  // }
 
   return (
     <html lang="en">
