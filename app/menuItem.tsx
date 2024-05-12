@@ -14,6 +14,8 @@ export default function MenuItem({ menu, menuClickCallback }: { menu: Menu, menu
     // }
 
     return (
-        <li className={`flex px-3 ${menu.isSelected ? `border-solid border-2 border-slate-100 rounded` : ``} ${menu.index == 0 ? `rounded-tl-none rounded-bl-none` : ``} `}><Link className="m-auto" href={menu.urlSegment} onClick={(e) => menuClickCallback(menu.index)}>{menu.name}</Link></li>
+        <h4 className='flex px-5 py-3 border-solid border-2 border-slate-300 rounded-full overflow-hidden relative menu-item'>
+            <Link className="m-auto" href={menu.urlSegment} onClick={(e) => menuClickCallback(menu.index)}>{menu.name}</Link>
+        </h4>
     )
 }

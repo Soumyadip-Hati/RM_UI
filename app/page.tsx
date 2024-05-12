@@ -1,12 +1,22 @@
-import Image from "next/image";
-//import {} from ''
+'use client';
+
+import { useEffect } from "react";
+import 'locomotive-scroll/dist/locomotive-scroll.css';
+import Home from "./home/page";
 
 export default function AppRoot() {
+
+  useEffect(() => {
+    import("locomotive-scroll").then(locomotiveModule => {
+      const scroll = new locomotiveModule.default({
+        el: document.querySelector("#main"),
+        smooth: true,
+        smoothMobile: false,
+      })
+    })
+  }, []);
+
   return (
-    <main>
-      
-      <div>Hello World!</div>
-      
-    </main>
+    <Home></Home>
   );
 }

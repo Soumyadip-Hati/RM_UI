@@ -16,6 +16,18 @@ const menus: Menu[] = [
         urlSegment: '/apps',
         index: 1,
         isSelected: false
+    },
+    {
+        name: 'Release',
+        urlSegment: '/release',
+        index: 2,
+        isSelected: false
+    },
+    {
+        name: 'Identity',
+        urlSegment: '/identity',
+        index: 3,
+        isSelected: false
     }
 ];
 
@@ -29,12 +41,12 @@ export default function MenuList() {
     };
 
     return (
-        <ul className="flex gap-0 font-semibold text-slate-50 h-full pt-3">
+        <div className='flex top-menu-container relative'>
             {
                 menus.map(m => (
                     <MenuItem key={m.index} menu={m} menuClickCallback={handleCallback} />
                 ))
             }
-        </ul>
+        </div>
     )
 }

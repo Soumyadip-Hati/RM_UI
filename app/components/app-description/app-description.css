@@ -1,0 +1,71 @@
+.app-desc {
+    height: 40vh;
+  }
+  
+  .app-desc h1 {
+    line-height: 0.75;
+  }
+  
+  .animator-desc-video {
+    position: absolute;
+    left: 0;
+  }
+  
+  .animator-desc-video div {
+    height: 20rem;
+    width: 20rem; 
+    position: absolute;
+  }
+  
+  .animator-desc-video div:first-child {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: orange; 
+    width: 25rem;
+    top:-5vh;
+    filter: blur(1rem);
+  }
+  
+  .animator-desc-video div:nth-child(2) {
+    border-radius: 50%;
+    background-color: rgba(255, 166, 0, 0.684);
+    /* background-color: blue; */
+    animation-name: xanime;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    filter: blur(1rem);
+  }
+  
+  .animator-desc-video div:last-child {
+    border-radius: 50%;
+    background-color: rgba(255, 166, 0, 0.684);
+    /* background-color: blue; */
+    animation-name: yanime;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    filter: blur(1rem);
+  }
+  
+  @keyframes xanime {
+    from{
+      transform: translate(0%,0%);
+    }
+    to{
+      transform: translate(30%,-30%);
+    }
+  }
+  
+  @keyframes yanime {
+    from{
+      transform: translate(10%,10%);
+    }
+    to{
+      transform: translate(-25%,-30%);
+    }
+  }
+  
